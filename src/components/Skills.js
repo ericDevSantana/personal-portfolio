@@ -60,7 +60,7 @@ const Skills = () => {
         {skills.map((skill) => {
           return (
             <div key={skill.id} className={styles["skills-item"]}>
-              <img src={skill.url}></img>
+              <img src={skill.url} alt="javascript's logo"></img>
             </div>
           );
         })}
