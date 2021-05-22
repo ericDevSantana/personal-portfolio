@@ -1,0 +1,46 @@
+.header-navbar {
+  display: flex;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  height: 1.5rem;
+  font-size: calc(1px + 2vmin);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+.header-logo img {
+  padding: 10px;
+  height: 35px;
+  width: 70px;
+}
+
+.header-panel {
+  min-height: 500px;
+  width: 100%;
+}
+
+.header-links {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 2rem 0 0;
+}
+
+.header-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.header-links a:hover {
+  color: #ccc;
+}

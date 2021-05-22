@@ -1,0 +1,38 @@
+.skills {
+  background-color: rgb(197, 103, 103);
+  padding: 0 0 3rem 0;
+}
+
+.skills h1 {
+  font-size: 5rem;
+}
+
+.skills img {
+  height: 150px;
+  width: 150px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+.skills-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 5px;
+  height: 180px;
+  width: 180px;
+  background-color: rgb(255, 255, 255);
+}
+
+.skills-item :hover {
+  animation: 1s;
+  height: 200px;
+  width: 200px;
+}
