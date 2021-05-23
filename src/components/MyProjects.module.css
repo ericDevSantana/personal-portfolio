@@ -1,0 +1,27 @@
+.myProjects {
+  padding: 0 0 3rem 0;
+  margin-top: -55px;
+}
+
+.myProjects h1 {
+  font-size: 5rem;
+}
+
+.myProjects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+.myProjects-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 5px;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(97, 97, 97);
+}

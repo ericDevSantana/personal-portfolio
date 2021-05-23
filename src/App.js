@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Layout/Header";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import MyProjects from "./components/MyProjects";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <main>
         <AboutMe />
         <Skills />
-        <div>projects</div>
+        <MyProjects />
         <div>contact me</div>
       </main>
       <div style={{ bottom: "0", position: "fixed", width: "100%" }}></div>
