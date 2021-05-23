@@ -4,20 +4,19 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem;
   height: 1.5rem;
-  font-size: calc(1px + 2vmin);
+  font-size: calc(3px + 2vmin);
 }
 
 .header-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10%;
+  width: 9%;
 }
 
 .header-logo img {
-  padding: 10px;
   height: 35px;
   width: 70px;
 }
@@ -42,5 +41,5 @@
 }
 
 .header-links a:hover {
-  color: #ccc;
+  color: rgb(151, 151, 151);
 }
