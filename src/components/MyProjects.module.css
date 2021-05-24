@@ -43,7 +43,7 @@
 .myProjects-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 1rem;
   margin: 5px;
   height: 200px;

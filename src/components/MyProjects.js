@@ -1,10 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./MyProjects.module.css";
 
 const MyProjects = (props) => {
+  const [filterSelected, setFilterSelected] = useState("all");
+  const projects = [
+    {
+      id: 0,
+      name: "project 1",
+      tag: "react.js",
+    },
+    {
+      id: 1,
+      name: "project 2",
+      tag: "html",
+    },
+    {
+      id: 2,
+      name: "project 3",
+      tag: "javascript",
+    },
+    {
+      id: 3,
+      name: "project 4",
+      tag: "javascript",
+    },
+    {
+      id: 4,
+      name: "project 5",
+      tag: "javascript",
+    },
+    {
+      id: 5,
+      name: "project 6",
+      tag: "javascript",
+    },
+    {
+      id: 6,
+      name: "project 7",
+      tag: "javascript",
+    },
+  ];
   const onClickHandler = (event) => {
-    console.log(event.target.name);
-    // Use the a tag name to filter all the projects
+    setFilterSelected(event.target.name);
   };
 
   return (
@@ -15,31 +52,38 @@ const MyProjects = (props) => {
           <a name="all" onClick={onClickHandler}>
             all
           </a>
-          <a href="/">react.js</a>
-          <a href="/">javascript</a>
-          <a href="/">html</a>
-          <a href="/">css</a>
+          <a name="react.js" onClick={onClickHandler}>
+            react.js
+          </a>
+          <a name="javascript" onClick={onClickHandler}>
+            javascript
+          </a>
+          <a name="html" onClick={onClickHandler}>
+            html
+          </a>
+          <a name="css" onClick={onClickHandler}>
+            css
+          </a>
         </div>
       </div>
       <div className={styles["myProjects-list"]}>
-        <div className={styles["myProjects-item"]}>
-          <h3>Project 1</h3>
-        </div>
-        <div className={styles["myProjects-item"]}>
-          <h3>Project 2</h3>
-        </div>
-        <div className={styles["myProjects-item"]}>
-          <h3>Project 3</h3>
-        </div>
-        <div className={styles["myProjects-item"]}>
-          <h3>Project 4</h3>
-        </div>
-        <div className={styles["myProjects-item"]}>
-          <h3>Project 5</h3>
-        </div>
-        <div className={styles["myProjects-item"]}>
-          <h3>Project 6</h3>
-        </div>
+        {projects
+          .filter((project) => {
+            if (filterSelected === "all") {
+              return project.tag;
+            }
+            return project.tag === filterSelected;
+          })
+          .map((project) => {
+            return (
+              <div className={styles["myProjects-item"]}>
+                <h3>{project.name}</h3>
+                <div>
+                  <p>{project.tag}</p>
+                </div>
+              </div>
+            );
+          })}
       </div>
     </div>
   );
