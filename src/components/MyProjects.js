@@ -47,25 +47,25 @@ const MyProjects = (props) => {
   return (
     <div className={styles.myProjects}>
       <h1>my projects</h1>
-      <div className={styles["myProjects-list"]}>
-        <div className={styles["myProjects-filter"]}>
-          <a name="all" onClick={onClickHandler}>
-            all
-          </a>
-          <a name="react.js" onClick={onClickHandler}>
-            react.js
-          </a>
-          <a name="javascript" onClick={onClickHandler}>
-            javascript
-          </a>
-          <a name="html" onClick={onClickHandler}>
-            html
-          </a>
-          <a name="css" onClick={onClickHandler}>
-            css
-          </a>
-        </div>
+
+      <div className={styles["myProjects-filter"]}>
+        <a name="all" onClick={onClickHandler}>
+          all
+        </a>
+        <a name="react.js" onClick={onClickHandler}>
+          react.js
+        </a>
+        <a name="javascript" onClick={onClickHandler}>
+          javascript
+        </a>
+        <a name="html" onClick={onClickHandler}>
+          html
+        </a>
+        <a name="css" onClick={onClickHandler}>
+          css
+        </a>
       </div>
+
       <div className={styles["myProjects-list"]}>
         {projects
           .filter((project) => {

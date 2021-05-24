@@ -18,12 +18,13 @@
 
 .myProjects-filter {
   display: flex;
+  flex-wrap: wrap;
   border: 1px solid white;
   border-radius: 10px;
   width: 40%;
   justify-content: center;
   align-items: center;
-  margin: 0 2rem 2rem 0;
+  margin: 0 auto 2rem;
 }
 
 .myProjects-filter a {
@@ -32,12 +33,32 @@
   color: rgb(255, 255, 255);
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 5px;
+}
+
 .myProjects-list {
   display: flex;
+  height: 50vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin: auto;
-  width: 90%;
+  width: 89%;
 }
 
 .myProjects-item {
