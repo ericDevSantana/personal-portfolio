@@ -7,12 +7,37 @@
   font-size: 5rem;
 }
 
+.myProjects-navbar {
+  display: flex;
+  background-color: #000000;
+  width: 100%;
+  padding: 1rem;
+  height: 1.5rem;
+  font-size: calc(3px + 2vmin);
+}
+
+.myProjects-filter {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 2rem 0;
+}
+
+.myProjects-filter a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 .myProjects-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .myProjects-item {
@@ -21,7 +46,7 @@
   justify-content: center;
   padding: 1rem;
   margin: 5px;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 400px;
   background-color: rgb(97, 97, 97);
 }
