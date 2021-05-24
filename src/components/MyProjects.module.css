@@ -47,7 +47,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: #f56262;
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
@@ -55,13 +55,13 @@
 
 .myProjects-list {
   display: flex;
-  height: 50vh;
+  height: 60vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: start;
   margin: auto;
-  width: 89%;
+  width: 90%;
 }
 
 .myProjects-item {

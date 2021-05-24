@@ -17,7 +17,7 @@ const MyProjects = (props) => {
     {
       id: 2,
       name: "project 3",
-      tag: "javascript",
+      tag: "html",
     },
     {
       id: 3,
