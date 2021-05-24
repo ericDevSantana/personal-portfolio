@@ -2,12 +2,19 @@ import React from "react";
 import styles from "./MyProjects.module.css";
 
 const MyProjects = (props) => {
+  const onClickHandler = (event) => {
+    console.log(event.target.name);
+    // Use the a tag name to filter all the projects
+  };
+
   return (
     <div className={styles.myProjects}>
       <h1>my projects</h1>
       <div className={styles["myProjects-list"]}>
         <div className={styles["myProjects-filter"]}>
-          <a href="/">all</a>
+          <a name="all" onClick={onClickHandler}>
+            all
+          </a>
           <a href="/">react.js</a>
           <a href="/">javascript</a>
           <a href="/">html</a>
