@@ -51,18 +51,6 @@ const Skills = () => {
       url: "js.png",
       alt: "this is my skill!",
     },
-    {
-      id: 8,
-      name: "Javascript",
-      url: "js.png",
-      alt: "this is my skill!",
-    },
-    {
-      id: 9,
-      name: "Javascript",
-      url: "js.png",
-      alt: "this is my skill!",
-    },
   ];
 
   return (

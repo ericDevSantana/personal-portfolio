@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  width: 80%;
+  width: 60%;
 }
 
 .skills-item {
@@ -25,14 +25,15 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  margin: 5px;
+  margin: 1px;
   height: 180px;
   width: 180px;
-  background-color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
 
 .skills-item :hover {
-  animation: 1s;
+  transition: 1s;
   height: 200px;
   width: 200px;
+  transform: rotate(360deg);
 }
