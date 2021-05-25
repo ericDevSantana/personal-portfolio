@@ -77,10 +77,10 @@ const MyProjects = (props) => {
           .map((project) => {
             return (
               <div className={styles["myProjects-item"]}>
-                <h3>{project.name}</h3>
-                <div>
+                <div className={styles["test"]}>
                   <p>{project.tag}</p>
                 </div>
+                <h3>{project.name}</h3>
               </div>
             );
           })}

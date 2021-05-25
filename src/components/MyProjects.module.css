@@ -59,18 +59,20 @@
   overflow-y: scroll;
   scroll-behavior: smooth;
   flex-wrap: wrap;
-  justify-content: start;
   margin: auto;
-  width: 90%;
+  width: 80%;
 }
 
 .myProjects-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 1rem;
-  margin: 5px;
-  height: 200px;
-  width: 400px;
+  display: inline-flex;
+  margin:5px;
+  height: 250px;
+  width: 49%;
   background-color: rgb(97, 97, 97);
+}
+
+.test {
+  background-color: red;
+  height: 100%;
+  width: 150px;
 }
