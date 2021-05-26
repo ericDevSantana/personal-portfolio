@@ -64,15 +64,23 @@
 }
 
 .myProjects-item {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
   margin:5px;
   height: 250px;
   width: 49%;
-  background-color: rgb(97, 97, 97);
+  background-color: rgb(105, 105, 105);
 }
 
-.test {
-  background-color: red;
+.myProjects-item-img{
+  clip-path: ellipse(230px 230px at 25% 50%);
+  width: 60%;
   height: 100%;
-  width: 150px;
 }
+
+.myProjects-item-description{
+  display: inline;
+  text-align: center;
+}
+
+

@@ -76,11 +76,16 @@ const MyProjects = (props) => {
           })
           .map((project) => {
             return (
-              <div className={styles["myProjects-item"]}>
-                <div className={styles["test"]}>
-                  <p>{project.tag}</p>
+              /* <Card/> */
+              <div key={project.id} className={styles["myProjects-item"]}>
+                <img
+                  className={styles["myProjects-item-img"]}
+                  src="project-bg.jpeg"
+                />
+                <div className={styles["myProjects-item-description"]}>
+                  <h4>{project.name}</h4>
+                  <p>this is my project description.</p>
                 </div>
-                <h3>{project.name}</h3>
               </div>
             );
           })}
