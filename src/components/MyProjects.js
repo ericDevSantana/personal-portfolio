@@ -49,19 +49,19 @@ const MyProjects = (props) => {
       <h1>my projects</h1>
 
       <div className={styles["myProjects-filter"]}>
-        <a href="/" name="all" onClick={onClickHandler}>
+        <a href="javascript:void(0)" name="all" onClick={onClickHandler}>
           all
         </a>
-        <a href="/" name="react.js" onClick={onClickHandler}>
+        <a href="javascript:void(0)" name="react.js" onClick={onClickHandler}>
           react.js
         </a>
-        <a href="/" name="javascript" onClick={onClickHandler}>
+        <a href="javascript:void(0)" name="javascript" onClick={onClickHandler}>
           javascript
         </a>
-        <a href="/" name="html" onClick={onClickHandler}>
+        <a href="javascript:void(0)" name="html" onClick={onClickHandler}>
           html
         </a>
-        <a href="/" name="css" onClick={onClickHandler}>
+        <a href="javascript:void(0)" name="css" onClick={onClickHandler}>
           css
         </a>
       </div>
@@ -76,7 +76,7 @@ const MyProjects = (props) => {
           })
           .map((project) => {
             return (
-              /* <Card/> */
+              /* <Project Card/>*/
               <a
                 href="/"
                 key={project.id}
@@ -90,7 +90,7 @@ const MyProjects = (props) => {
                 <div className={styles["myProjects-item-description"]}>
                   <h2>{project.name}</h2>
                   <p>tag: {project.tag}</p>
-                  <p>little description about this project.</p>
+                  <p>this is a little description about this project. </p>
                 </div>
               </a>
             );
