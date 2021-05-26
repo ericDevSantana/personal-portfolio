@@ -62,31 +62,3 @@
   margin: auto;
   width: 80%;
 }
-
-.myProjects-item {
-  display: flex;
-  text-decoration: none;
-  justify-content: space-between;
-  color: black;
-  margin: 5px;
-  height: 250px;
-  width: 49%;
-  background: rgb(255, 255, 255);
-}
-
-.myProjects-item-img {
-  clip-path: ellipse(180px 180px at 30% 50%);
-  width: 50%;
-  height: 100%;
-}
-
-.myProjects-item-description {
-  display: inline;
-  text-align: center;
-  width: 50%;
-}
-
-.myProjects-item-description p{
-  text-align: left;
-  padding: 0 1rem;
-}
