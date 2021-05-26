@@ -49,19 +49,19 @@ const MyProjects = (props) => {
       <h1>my projects</h1>
 
       <div className={styles["myProjects-filter"]}>
-        <a name="all" onClick={onClickHandler}>
+        <a href="/" name="all" onClick={onClickHandler}>
           all
         </a>
-        <a name="react.js" onClick={onClickHandler}>
+        <a href="/" name="react.js" onClick={onClickHandler}>
           react.js
         </a>
-        <a name="javascript" onClick={onClickHandler}>
+        <a href="/" name="javascript" onClick={onClickHandler}>
           javascript
         </a>
-        <a name="html" onClick={onClickHandler}>
+        <a href="/" name="html" onClick={onClickHandler}>
           html
         </a>
-        <a name="css" onClick={onClickHandler}>
+        <a href="/" name="css" onClick={onClickHandler}>
           css
         </a>
       </div>
@@ -77,16 +77,22 @@ const MyProjects = (props) => {
           .map((project) => {
             return (
               /* <Card/> */
-              <div key={project.id} className={styles["myProjects-item"]}>
+              <a
+                href="/"
+                key={project.id}
+                className={styles["myProjects-item"]}
+              >
                 <img
                   className={styles["myProjects-item-img"]}
                   src="project-bg.jpeg"
+                  alt="landing page"
                 />
                 <div className={styles["myProjects-item-description"]}>
-                  <h4>{project.name}</h4>
-                  <p>this is my project description.</p>
+                  <h2>{project.name}</h2>
+                  <p>tag: {project.tag}</p>
+                  <p>little description about this project.</p>
                 </div>
-              </div>
+              </a>
             );
           })}
       </div>

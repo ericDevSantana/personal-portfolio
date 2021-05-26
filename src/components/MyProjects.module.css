@@ -65,22 +65,28 @@
 
 .myProjects-item {
   display: flex;
+  text-decoration: none;
   justify-content: space-between;
-  margin:5px;
+  color: black;
+  margin: 5px;
   height: 250px;
   width: 49%;
-  background-color: rgb(105, 105, 105);
+  background: rgb(255, 255, 255);
 }
 
-.myProjects-item-img{
-  clip-path: ellipse(230px 230px at 25% 50%);
-  width: 60%;
+.myProjects-item-img {
+  clip-path: ellipse(180px 180px at 30% 50%);
+  width: 50%;
   height: 100%;
 }
 
-.myProjects-item-description{
+.myProjects-item-description {
   display: inline;
   text-align: center;
+  width: 50%;
 }
 
-
+.myProjects-item-description p{
+  text-align: left;
+  padding: .5rem;
+}
