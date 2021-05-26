@@ -4,7 +4,7 @@ import styles from "./AboutMe.module.css";
 const AboutMe = () => {
   return (
     <div className={styles.about}>
-      <img src="profile.jpg" alt="Portfolio's owner."></img>
+      <img src="/pictures/profile.jpg" alt="Portfolio's owner."></img>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

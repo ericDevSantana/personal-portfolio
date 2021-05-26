@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className={styles["header-navbar"]}>
       <div className={styles["header-logo"]}>
-        <img src="/portfolioLogo.png" alt="My personal logo."></img>
+        <img src="/pictures/portfolioLogo.png" alt="My personal logo."></img>
       </div>
       <div className={styles["header-links"]}>
         <a href="/">home</a>

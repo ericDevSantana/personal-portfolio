@@ -10,7 +10,7 @@
 }
 
 .projectCard-item-img {
-  clip-path: ellipse(180px 180px at 30% 50%);
+  clip-path: ellipse(180px 280px at 30% 50%);
   width: 50%;
   height: 100%;
 }
