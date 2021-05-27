@@ -2,14 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 15rem;
+    min-height: 60vh;
     color: whitesmoke;
-    margin: 10rem 25rem;
+    margin: 5rem 25rem;
 }
 
 .about img{
     border-radius: 50%;
-    border: 5px solid white;
     margin-right: 30px;
     float: left;
     height: 200px;
