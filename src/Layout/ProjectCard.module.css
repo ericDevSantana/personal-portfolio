@@ -2,15 +2,15 @@
   display: flex;
   text-decoration: none;
   justify-content: space-between;
-  color: black;
+  color: rgb(0, 0, 0);
   margin: 5px;
-  height: 250px;
+  height: 205px;
   width: 49%;
   background: rgb(255, 255, 255);
 }
 
 .projectCard-item-img {
-  clip-path: ellipse(180px 280px at 30% 50%);
+  clip-path: ellipse(180px 190px at 30% 50%);
   width: 50%;
   height: 100%;
 }
