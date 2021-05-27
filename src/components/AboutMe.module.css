@@ -1,21 +1,21 @@
 .about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 60vh;
-    color: whitesmoke;
-    margin: 5rem 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  color: whitesmoke;
+  margin: 5rem 25rem;
 }
 
-.about img{
-    border-radius: 50%;
-    margin-right: 30px;
-    float: left;
-    height: 200px;
-    width: 200px;
+.about img {
+  border-radius: 50%;
+  margin-right: 30px;
+  float: left;
+  height: 200px;
+  width: 200px;
 }
 
-.about p{
-    text-align: justify;
-    font-size: medium;
+.about p {
+  text-align: justify;
+  font-size: medium;
 }
